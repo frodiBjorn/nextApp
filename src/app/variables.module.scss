@@ -1,0 +1,13 @@
+$black: #252525;
+$danger: #ff0000;
+$primary-green: #46a358;
+$light-green: rgba(70, 163, 88, 0.1);
+$light-gray: rgba(245, 245, 245, 0.5);
+
+:export {
+  black: $black;
+  danger: $danger;
+  light-green: $light-green;
+  primary-green: $primary-green;
+  light-gray: $light-gray;
+}

@@ -1,0 +1,21 @@
+@import "../../app/variables.module.scss";
+.wrapper {
+  width: 100%;
+  background: $light-gray;
+  padding: 40px;
+  h2,
+  h1 {
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 0.7rem;
+  }
+  h1 {
+    max-width: 400px;
+    font-size: 3rem;
+    font-weight: 900;
+    span {
+      color: $primary-green;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import "../../app/variables.module.scss";
+.header {
+  margin-bottom: 20px;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: $light-green;
+
+  .logo {
+    font-weight: 900;
+  }
+
+  
+}

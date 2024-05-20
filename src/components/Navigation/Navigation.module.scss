@@ -1,0 +1,37 @@
+@import "../../app/variables.module.scss";
+
+.navigation {
+  flex-grow: 1;
+
+  .navigation_list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px 0;
+
+    .navigation_item a {
+      padding: 4px 8px;
+      display: inline-block;
+      color: $primary-green;
+      font-size: 1.5rem;
+      transition: all 0.3s ease-in-out;
+      font-weight: 900;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+.active {
+  position: relative;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background: $primary-green;;
+  }
+}
