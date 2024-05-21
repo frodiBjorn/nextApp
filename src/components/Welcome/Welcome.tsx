@@ -1,8 +1,14 @@
+import classNames from 'classnames';
+
 import styles from "./Welcome.module.scss";
 
-const Welcome = () => {
+interface Props {
+  className: string
+}
+
+const Welcome = ({className} : Props) => {
   return (
-    <div className={styles.wrapper}>
+    <div className={classNames(styles.wrapper, className)}>
       <div className={styles.info}>
         <h2>Welcome to our store</h2>
         <h1>
