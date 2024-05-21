@@ -1,5 +1,23 @@
 @import "../../app/variables.module.scss";
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  flex-grow: 1;
+  a{
+    color: $primary-green;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+    font-weight: 900;
+    padding: 4px 8px;
+    display: inline-block;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 
+}
 .navigation {
   flex-grow: 1;
 
@@ -8,19 +26,6 @@
     justify-content: center;
     gap: 50px;
     padding: 20px 0;
-
-    .navigation_item a {
-      padding: 4px 8px;
-      display: inline-block;
-      color: $primary-green;
-      font-size: 1.5rem;
-      transition: all 0.3s ease-in-out;
-      font-weight: 900;
-
-      &:hover {
-        transform: scale(1.2);
-      }
-    }
   }
 }
 .active {
@@ -34,4 +39,21 @@
     left: 0;
     background: $primary-green;;
   }
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background: $primary-green;
+
+  &:hover {
+    background: lighten($primary-green, 5) !important;
+  }
+}
+.services{
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }

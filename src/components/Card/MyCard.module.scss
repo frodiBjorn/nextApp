@@ -1,0 +1,49 @@
+@import '../../app/variables.module.scss';
+
+.wrapper{
+  width: 250px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover{
+    transform: scale(103%);
+  }
+  .card{
+    background: $light-gray;
+
+
+    .img{
+      object-fit: contain;
+      object-position: center;
+
+    }
+    .actions{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      height: 50px;
+      visibility: hidden;
+      svg{
+        width: 20px;
+        height: 20px;
+        transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        &:hover{
+          color: $primary-green;
+          transform: scale(135%);
+        }
+      }
+    }
+
+    &:hover {
+    .actions{
+        visibility: visible;
+    }      
+    }
+  }
+
+  .value{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $primary-green;
+  }
+}
