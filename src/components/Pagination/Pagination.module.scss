@@ -1,0 +1,32 @@
+@import "../../app/variables.module.scss";
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  .btn {
+    background: $light-green;
+    color: $primary-green;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover {
+      background: $light-green, 0.5;
+    }
+    &:disabled {
+      color: #ccc;
+      cursor: not-allowed;
+    }
+
+    &.active {
+      font-weight: bold;
+      color: #fff;
+      background: $light-green;
+    }
+  }
+}
